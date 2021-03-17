@@ -1,53 +1,42 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Building with Active Record (Micro-Reddit)
 
-> One paragraph statement about the project.
+> This project is about practicing data modeling and active record knowledge.
 
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+Full project description - [Click here](https://www.theodinproject.com/courses/ruby-on-rails/lessons/building-with-active-record-ruby-on-rails)
 
 ## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
+- [RubyOnRails](https://rubyonrails.org/)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
+- You need to have [RubyOnRails](https://rubyonrails.org/)installed.
 
 ### Setup
 
-### Install
+- Download or clone this repo.
+- From your terminal, `cd` into the repo directory and run `bundle install`.
+- Run the command `rails db:create`. This will initialize the necessary migration files.
+- Run the command `rails db:migrate`.
+- Run the command `rails c`.
 
 ### Usage
 
-### Run tests
-
-### Deployment
-
-
+- Now you can ask for all Authors like `Author.all` or create a Author like `author_one = Author.create(username)`.
+- You can create Posts like `post_one = Post.create(title, body, author_id)`.
+- You can create Comments like `comment_one = Comment.create(body, author_id, post_id)`.
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@RyelBanfield](https://github.com/RyelBanfield)
+- Twitter: [@RyelBanfield](https://twitter.com/RyelBanfield)
+- LinkedIn: [RyelBanfield](https://www.linkedin.com/in/ryel-banfield/)
 
 👤 **Author2**
 
@@ -73,4 +62,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [MIT](LICENSE) licensed.
