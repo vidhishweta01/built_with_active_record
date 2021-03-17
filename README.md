@@ -1,24 +1,65 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Building with Active Record (Micro-Reddit)
 
-Things you may want to cover:
+> This project is about practicing data modeling and active record knowledge.
 
-* Ruby version
+Full project description - [Click here](https://www.theodinproject.com/courses/ruby-on-rails/lessons/building-with-active-record-ruby-on-rails)
 
-* System dependencies
+## Built With
+- [RubyOnRails](https://rubyonrails.org/)
 
-* Configuration
+## Getting Started
 
-* Database creation
+To get a local copy up and running follow these simple steps.
 
-* Database initialization
+### Prerequisites
+- You need to have [RubyOnRails](https://rubyonrails.org/)installed.
 
-* How to run the test suite
+### Setup
 
-* Services (job queues, cache servers, search engines, etc.)
+- Download or clone this repo.
+- From your terminal, `cd` into the repo directory and run `bundle install`.
+- Run the command `rails db:create`. This will initialize the necessary migration files.
+- Run the command `rails db:migrate`.
+- Run the command `rails c`.
 
-* Deployment instructions
+### Usage
 
-* ...
+- Now you can ask for all Authors like `Author.all` or create a Author like `author_one = Author.create(username)`.
+- You can create Posts like `post_one = Post.create(title, body, author_id)`.
+- You can create Comments like `comment_one = Comment.create(body, author_id, post_id)`.
+
+## Authors
+
+👤 **Author1**
+
+- GitHub: [@RyelBanfield](https://github.com/RyelBanfield)
+- Twitter: [@RyelBanfield](https://twitter.com/RyelBanfield)
+- LinkedIn: [RyelBanfield](https://www.linkedin.com/in/ryel-banfield/)
+
+👤 **Author2**
+
+- GitHub: [@ShwetaSrivastava](https://github.com/vidhishweta01)
+- Twitter: [@ShwetaSrivastava](https://twitter.com/vidhishweta01)
+- LinkedIn: [ShwetaSrivastava](https://www.linkedin.com/in/vidhishweta01/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](LICENSE) licensed.
